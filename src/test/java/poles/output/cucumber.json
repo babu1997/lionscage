@@ -1,0 +1,101 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-25T09:08:10.097Z",
+        "line": 6,
+        "name": "",
+        "description": "",
+        "id": "test-calculator;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5795400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter 200 in the calculator",
+            "match": {
+              "location": "step.ip()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 659200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "press add",
+            "match": {
+              "location": "step.add1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 306000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter 30 in the calculator",
+            "match": {
+              "location": "step.add2()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 215000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "press equal",
+            "match": {
+              "location": "step.when()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2102500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the result should be 230",
+            "match": {
+              "location": "step.then()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Test calculator",
+    "description": "this file describes calculator functionality",
+    "id": "test-calculator",
+    "keyword": "Feature",
+    "uri": "classpath:poles/test.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
